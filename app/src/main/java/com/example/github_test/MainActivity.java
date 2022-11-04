@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int i1;
+    String s1;
     TextView tv1, tv2, tv3;
 
     @Override
@@ -21,5 +21,8 @@ public class MainActivity extends AppCompatActivity {
         tv1.setText("나도");
         tv2.setText("놀고싶다");
         tv3.setText("!!");
+
+        MainDTO DTO = new MainDTO();
+        s1 = DTO.getTest01();
     }
 }
